@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Projeto</title>
+
+    </head>
+
+    
+<body>
+    
+<div class="container">
+
+
+
+
+    <div class="cabecalho">
+
+        <p class="txt-cab">Padlog</p>
+
+        <form action="#" method="post">
+
+            <label for="cpf" class="input-cpf">Digite o seu CPF:
+            <input type="text" name="CPF" class="cpf-cab" placeholder="000.000.000-00" id="cpf-cab">
+            </label>
+
+            <label for="rastreio" class="input-rast">Digite o código do rastreio:
+            <input type="text" name="cdg-rast" class="rast-cab" placeholder="BR00000000-0" onkeypress="$(this).mask('BR00000000-0');">
+            </label>
+
+            <input type="submit" name="enviar" class="enviar" value="Enviar">
+
+        </form>
+
+    </div>
+
+
+
+
+    <div class="info">
+
+        <img src="caminhão.jpg" alt="Logística" width="500px" class="caminhao">
+
+
+<pre class="txt-info">
+
+Logística com a PadLog é o processo de execução 
+eficiente de transporte e armazenamento de matéria 
+prima ou mercadorias, desde o ponto de origem até 
+o ponto de consumo. O nosso objetivo é atender aos 
+requisitos do cliente de maneira oportuna e econômica.
+
+</pre>
+
+
+    </div>
+
+
+
+    <div class="curriculo">
+
+        <p class="txt-curriculo">Quer trabalhar conosco? Nos envie o seu cúrriculo!</p>
+
+            <div class="mascara"></div>
+
+                <form action="#" method="post" class="form-c">
+
+                <div class="email-d">
+
+                    <label for="#">Informe o seu e-mail:</label>
+                    <input type="email" name="email" class="q-email" maxlength="72" id="inputt" placeholder="example@hotmail.com">
+
+                </div>
+
+                <div class="email-d1">
+
+                    <label for="#">Informe o seu telefone:</label>
+                    <input type="text" name="num-tel" class="q-num-tel"  id="inputt" placeholder="(00) 00000-0000" onkeypress="$(this).mask('(00) 00000-0000');">
+                
+                </div>
+
+                <div class="email-d2">
+
+                    <label for="#">Informe o seu cep:</label>
+                    <input type="text" name="cep" class="q-cep"  id="cep" placeholder="00000-000" required>
+
+                </div>
+
+                <div class="email-d3">
+
+                    <label for="#">Informe o número da sua casa:</label>
+                    <input type="text" name="num-casa" class="q-num-casa"  id="numero" maxlength="4" placeholder="0000" required>
+
+                </div>
+
+                <div class="email-d4">
+
+                    <label for="#">Informe o endereço da sua casa:</label>
+                    <input type="text" name="endereço" class="q-endereco"  id="logradouro" placeholder="Digite aqui..." required>
+
+                </div>
+                
+                <div class="email-d5">
+
+                    <label for="#">Informe a sua cidade:</label>
+                    <input type="text" name="cidade" class="q-cidade"  id="cidade" placeholder="Digite aqui..." required>
+
+                </div>
+
+                <div class="email-d6">
+
+                    <label for="#">Informe o bairro da sua casa:</label>
+                    <input type="text" name="bairro" class="q-bairro"  id="bairro" placeholder="Digite aqui...">
+
+                </div>
+
+                <div class="email-d7">
+
+                    <label for="uf">Estado:</label>
+
+                        <select name="uf" class="q-uf"  id="uf">
+
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+                    </select>
+
+            </div>
+
+            <div class="email-d9">
+
+                <label for="#">Informe a sua idade:</label>
+                <input type="number" name="idade" class="q-idade" maxlength="2" id="inputt" placeholder="00">
+
+            </div>
+
+
+            <button type="submit" class="q-btn" id="inputt">Enviar</button>
+
+
+
+        </form>
+
+    </div>
+
+
+<div class="rodape">
+
+    <p class="txt-rodape">Copyright © 2021 - PadLog - Todos os direitos reservados</p>
+
+</div>
+
+
+</div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $("#cep").focusout(function(){
+
+            $.ajax({
+
+                url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/', dataType: 'json',
+
+                success: function(resposta){
+
+                    $("#logradouro").val(resposta.logradouro);
+                    $("#complemento").val(resposta.complemento);
+                    $("#bairro").val(resposta.bairro);
+                    $("#cidade").val(resposta.localidade);
+                    $("#uf").val(resposta.uf);
+                    $("#numero").focus();
+                }
+            });
+        });
+
+    </script>
+
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> 
+
+<script>
+
+    $("#cpf-cab").keypress(function() {
+        $(this).mask('000.000.000-00');
+    });
+    
+    $("#cep").keypress(function() {
+        $(this).mask('00000-000');
+    }); 
+
+    $("#telefone").keypress(function() {
+        $(this).mask('(00) 00000-0000')
+    });       
+    
+
+</script>
+
+
+
+
+</html>
