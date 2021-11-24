@@ -28,6 +28,7 @@ header {
 .dp-menu {
     position: absolute;
     left: 68%;
+    z-index: 99;
 }
 
 .dp-menu ul {
@@ -198,3 +199,105 @@ span {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    position: relative;
+    left: -452px;
+    display: block;
+    transition: 3s ease;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 3s ease;
+  }
+
+  .prev {
+    left: -452px;
+  }
+
+  .next {
+    right: -451px;
+    border-radius: 3px 0 0 3px;
+    transition: 3s ease;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transition: 3s ease;
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    transition: 3s ease;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transition: 3s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+    transition: 3s ease;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+    transition: 3s ease;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
