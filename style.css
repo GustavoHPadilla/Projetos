@@ -301,3 +301,17 @@ span {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  
+.link-submit:link {
+    color: white;
+}
+
+.link-submit {
+    color: white;
+    text-decoration: none;
+}
+
+.link-submit:active {
+    color: white;
+}
